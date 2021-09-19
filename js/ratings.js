@@ -3,6 +3,9 @@ function collect_ratings(){
 
     let rating = 0;
     const elements = document.querySelectorAll('.rating');
-    rating = elements.forEach(x => parseInt(x.id.replace(/\D/g, "")));
+    elements.forEach(element => {
+        rating = parseInt(element.id.replace('star',''));
+        parseInt(element.value);
+    });
 
 }
