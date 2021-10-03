@@ -14,4 +14,5 @@ function collect_ratings(){
         ratings.average = ratings.sum/ratings.count;
     }
 
+    return ratings;
 }
